@@ -1,0 +1,5 @@
+# author: Dmytro Kostiuchenko
+# handle usb audio add task
+
+SUBSYSTEM=="sound", MODE="0666"
+
