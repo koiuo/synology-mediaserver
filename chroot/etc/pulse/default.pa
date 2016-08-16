@@ -32,7 +32,7 @@ load-module module-alsa-card device_id=0
 load-module module-native-protocol-unix auth-group=audio
 
 ### Allow access for everyone on local network
-load-module module-native-protocol-tcp auth-ip-acl=192.168.0.0/24;
+load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1;192.168.0.0/24;
 load-module module-zeroconf-publish
 
 ### Load the RTP receiver module (also configured via paprefs, see above)
